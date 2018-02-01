@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Add a RedditClone</title>
+</head>
+<body>
+<table>
+    <tr th:each="redditclone : ${redditclones}">
+        <td>
+           <p th:text="${redditclone.title}"><br/></p>
+           <p th:text="${redditclone.username}"><br/></p>
+           <p th:text="${redditclone.url}"><br/></p>
+           <p th:text="${redditclone.date}"><br/></p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
